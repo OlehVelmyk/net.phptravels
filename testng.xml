@@ -1,0 +1,25 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="Suite1" verbose="1" parallel="classes" thread-count="5">
+    <listeners>
+        <listener class-name="com.automationpractice.logging.TestStatuses"></listener>
+    </listeners>
+
+    <test name="All-tests [Firefox]">
+        <parameter name="browser" value="firefox"/>
+        <classes>
+            <class name="com.automationpractice.tests.N_0001_LoginTest"></class>
+            <class name="com.automationpractice.tests.N_0002_LogoutByUITest"></class>
+            <class name="com.automationpractice.tests.N_0003_LogoutByEndPointTest"></class>
+        </classes>
+    </test>
+
+    <test name="All-tests [Chrome]">
+        <parameter name="browser" value="chrome"/>
+        <classes>
+            <class name="com.automationpractice.tests.N_0001_LoginTest"></class>
+            <class name="com.automationpractice.tests.N_0002_LogoutByUITest"></class>
+            <class name="com.automationpractice.tests.N_0003_LogoutByEndPointTest"></class>
+        </classes>
+    </test>
+</suite>
