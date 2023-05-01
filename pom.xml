@@ -10,7 +10,7 @@
 
     <properties>
         <selenium_java.version>3.141.59</selenium_java.version>
-        <testng.version>7.1.0</testng.version>
+        <testng.version>7.7.0</testng.version>
         <reportng.version>1.1.4</reportng.version>
         <velocity.version>1.7</velocity.version>
         <guice.version>4.2.3</guice.version>
