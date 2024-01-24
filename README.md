@@ -2,10 +2,10 @@
 2) Results review - Project folder/reports/ folder with date and time /html/index.html
 
 - Selenium UI Automation task
- Please create a simple Selenium based framework using the following Portal:
- https://www.phptravels.net/home
- Email:​ user@phptravels.com
- Password:​ demouser
+- Please create a simple Selenium based framework using the following Portal:
+- https://www.phptravels.net/home
+- Email:​ user@phptravels.com
+- Password:​ demouser
 - Tasks
 1. Framework can execute tests at least in Chrome/Firefox browsers
 2. Login with provided Credentials
