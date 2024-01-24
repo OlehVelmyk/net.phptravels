@@ -6,7 +6,7 @@
 - https://www.phptravels.net/home
 - Email:​ user@phptravels.com
 - Password:​ demouser
-  
+-  
 - Tasks
 1. Framework can execute tests at least in Chrome/Firefox browsers
 2. Login with provided Credentials
