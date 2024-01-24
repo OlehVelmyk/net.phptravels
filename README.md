@@ -1,7 +1,7 @@
 1) Maven project. Run tests - "mvn clean test"
 2) Results review - Project folder/reports/ folder with date and time /html/index.html
 
- Selenium UI Automation task:
+Selenium UI Automation task:
 1) Please create a simple Selenium based framework using the following Portal:
 - https://www.phptravels.net/home
 - Email:​ user@phptravels.com
