@@ -3,7 +3,7 @@
 
 Selenium UI Automation task:
 1) Please create a simple Selenium based framework using the following Portal:
-- https://www.phptravels.net/home
+- https://www.phptravels.net/
 - Email:​ user@phptravels.com
 - Password:​ demouser
   
