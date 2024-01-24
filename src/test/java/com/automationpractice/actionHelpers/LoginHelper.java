@@ -18,7 +18,9 @@ public class LoginHelper {
         LoginPage loginPage = new LoginPage(driver);
         AccountPage accountPage = new AccountPage(driver);
 
+        mainPage.clickAccountButton();
         mainPage.clickLoginButton();
+        Assert.assertTrue(loginPage.signInButtonIsPresent(), "Element isn't present on the page");
         loginPage.login();
         Assert.assertTrue(accountPage.logoutButtonIsPresent(), "Element isn't present on the page");
     }

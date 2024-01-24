@@ -5,7 +5,9 @@ import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
 
 public class AccountPage extends BasePage {
-    private final By logoutButton = By.cssSelector("a.logout");
+    private final By logoutButtonMenu = By.cssSelector("div:nth-child(2) > ul > li:nth-child(4)");
+    private final  By accountButton = By.cssSelector("div.nav-item--right > ul > li:nth-child(3)");
+    private final  By logoutButton = By.cssSelector("li:nth-child(3) > ul > li:nth-child(3)");
 
     LoginPage loginPage = new LoginPage(driver);
 
@@ -14,11 +16,18 @@ public class AccountPage extends BasePage {
     }
 
     public boolean logoutButtonIsPresent() {
-        return elementIsPresent("LOGOUT BUTTON IS PRESENT", logoutButton);
+        return elementIsPresent("LOGOUT BUTTON IS PRESENT", logoutButtonMenu);
     }
 
+    public void clickLogoutButtonMenu() {
+        actionClickElement("CLICK ON LOGOUT BUTTON", logoutButtonMenu, timeoutCommon);
+    }
     public void clickLogoutButton() {
-        actionClickElement("CLICK ON LOGOUT BUTTON", logoutButton, 10);
-        Assert.assertTrue(loginPage.SignInButtonIsPresent(), "Element isn't present on the page");
+        actionClickElement("CLICK ON LOGOUT BUTTON", logoutButton, timeoutCommon);
+    }
+
+    public void clickAccountButton() {
+        actionClickElement("CLICK ON ACCOUNT BUTTON", accountButton, timeoutCommon);
+        Assert.assertTrue(elementIsPresent("LOGIN BUTTON IS PRESENT", logoutButton), "Element isn't present on the page");
     }
 }

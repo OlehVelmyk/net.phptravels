@@ -29,8 +29,8 @@ public class EventHandler implements WebDriverEventListener {
 
     @Override
     public void beforeNavigateTo(String url, WebDriver driver) {
-        CustomReporter.log("Navigate to " + url);
-        System.out.println("Before navigating to: '" + url + "'");
+//        CustomReporter.log("Navigate to " + url);
+//        System.out.println("Before navigating to: '" + url + "'");
     }
 
     @Override
@@ -41,8 +41,8 @@ public class EventHandler implements WebDriverEventListener {
 
     @Override
     public void beforeNavigateBack(WebDriver driver) {
-        CustomReporter.log("Navigate back");
-        System.out.println("Navigate back");
+//        CustomReporter.log("Navigate back");
+//        System.out.println("Navigate back");
     }
 
     @Override
@@ -53,7 +53,7 @@ public class EventHandler implements WebDriverEventListener {
 
     @Override
     public void beforeNavigateForward(WebDriver driver) {
-        CustomReporter.log("Navigate forward");
+//        CustomReporter.log("Navigate forward");
     }
 
     @Override
@@ -63,7 +63,7 @@ public class EventHandler implements WebDriverEventListener {
 
     @Override
     public void beforeNavigateRefresh(WebDriver driver) {
-        CustomReporter.log("Refresh page");
+//        CustomReporter.log("Refresh page");
     }
 
     @Override
@@ -73,8 +73,8 @@ public class EventHandler implements WebDriverEventListener {
 
     @Override
     public void beforeFindBy(By by, WebElement element, WebDriver driver) {
-        CustomReporter.log("Search for element: " + "[" + by.toString() + "]");
-        System.out.println("Trying to find Element By : " + by.toString());
+//        CustomReporter.log("Search for element: " + "[" + by.toString() + "]");
+//        System.out.println("Trying to find Element By : " + by.toString());
     }
 
     @Override
@@ -87,8 +87,8 @@ public class EventHandler implements WebDriverEventListener {
 
     @Override
     public void beforeClickOn(WebElement element, WebDriver driver) {
-        CustomReporter.log("Trying to click on element: " + element.toString());
-        System.out.println("Trying to click on: " + element.toString());
+//        CustomReporter.log("Trying to click on element: " + element.toString());
+//        System.out.println("Trying to click on: " + element.toString());
     }
 
     @Override

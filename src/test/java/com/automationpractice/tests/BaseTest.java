@@ -2,21 +2,16 @@ package com.automationpractice.tests;
 
 import com.automationpractice.logging.CustomReporter;
 import com.automationpractice.logging.EventHandler;
-import com.automationpractice.pages.MainPage;
 import com.automationpractice.utils.DriverFactory;
 import org.openqa.selenium.support.events.EventFiringWebDriver;
 import org.testng.Assert;
-import org.testng.annotations.AfterClass;
-import org.testng.annotations.BeforeClass;
-import org.testng.annotations.Optional;
-import org.testng.annotations.Parameters;
+import org.testng.annotations.*;
 
 import java.util.concurrent.TimeUnit;
 
 public abstract class BaseTest {
     protected EventFiringWebDriver driver;
-    private String baseUrl = "http://automationpractice.com/index.php";
-    protected String logoutUrl = "http://automationpractice.com/index.php?mylogout=";
+    protected String baseUrl = "https://www.phptravels.net/";
 
     @BeforeClass
     @Parameters("browser")
@@ -41,12 +36,5 @@ public abstract class BaseTest {
         CustomReporter.logAction("GO TO " + baseUrl);
         driver.get(baseUrl);
         Assert.assertEquals(driver.getCurrentUrl(), baseUrl);
-    }
-
-    protected void logout() {
-        MainPage mainPage = new MainPage(driver);
-        CustomReporter.logAction("GO TO " + logoutUrl);
-        driver.get(logoutUrl);
-        Assert.assertTrue(mainPage.loginButtonIsPresent(), "Element isn't present on the page");
     }
 }
